@@ -254,7 +254,7 @@ var WEDDING = new Date("2026-12-12T09:00:00+07:00").getTime();
 /* ---- Data ucapan tamu (tersimpan di server Lovable Cloud) ---- */
 var WISH_API = "https://uxlxjbuauellpulcyjao.supabase.co/rest/v1/wedding_wishes";
 var WISH_KEY = "sb_publishable_ILddD60PumxUZDD_JPmSCg_gvS1KoJA";
-var wishHeaders = { "apikey": WISH_KEY, "Authorization": "Bearer " + WISH_KEY };
+var wishHeaders = { "apikey": WISH_KEY };
 
 function pad(n){ return String(Math.max(0, Math.floor(n))).padStart(2, "0"); }
 function tick(){
