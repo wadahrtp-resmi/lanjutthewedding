@@ -1,355 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Undangan Pernikahan Juan &amp; Ratiana</title>
-<meta name="description" content="Dengan hormat kami mengundang Anda di hari bahagia Juan &amp; Ratiana.">
-<meta property="og:title" content="Undangan Pernikahan Juan &amp; Ratiana">
-<meta property="og:description" content="Dengan hormat kami mengundang Anda di hari bahagia Juan &amp; Ratiana.">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Undangan Pernikahan Adat Batak – Juan &amp; Ratiana</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&family=Lora:ital@0;1&family=Stardos+Stencil:wght@400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&display=swap">
 <style>
-  :root{
-    --background: oklch(0.95 0.025 95);
-    --foreground: oklch(0.28 0.04 130);
-    --card: oklch(0.97 0.02 95);
-    --primary: oklch(0.38 0.06 130);
-    --primary-foreground: oklch(0.95 0.025 95);
-    --muted: oklch(0.88 0.03 95);
-    --muted-foreground: oklch(0.45 0.04 120);
-    --accent: oklch(0.3 0.045 135);
-    --accent-foreground: oklch(0.93 0.03 95);
-    --border: oklch(0.7 0.07 85);
-    --gold: oklch(0.75 0.12 85);
-    --font-display: "Cormorant Garamond", serif;
-    --font-stencil: "Stardos Stencil", serif;
-    --font-script: "Great Vibes", cursive;
-    --font-body: "Lora", serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    background:var(--background);
-    color:var(--foreground);
-    font-family:var(--font-body);
-    -webkit-font-smoothing:antialiased;
-  }
-  .camo{
-    background-color:var(--accent);
-    background-image:
-      radial-gradient(ellipse 120px 70px at 20% 30%, oklch(0.36 0.05 125 / .9), transparent 70%),
-      radial-gradient(ellipse 90px 60px at 70% 20%, oklch(0.24 0.035 140 / .9), transparent 70%),
-      radial-gradient(ellipse 140px 80px at 60% 75%, oklch(0.42 0.05 100 / .7), transparent 70%),
-      radial-gradient(ellipse 100px 50px at 10% 85%, oklch(0.22 0.03 140 / .9), transparent 70%);
-    background-size:300px 220px;
-    color:var(--accent-foreground);
-  }
-  .gold-line{
-    height:1px;
-    background:linear-gradient(90deg, transparent, var(--gold), transparent);
-    flex:1;
-  }
-  .fade-up{animation:fadeUp 1s ease both}
-  @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
-  .hidden{display:none !important}
+:root{
+  --red: oklch(0.42 0.16 27);
+  --red-deep: oklch(0.3 0.12 25);
+  --black: oklch(0.17 0.01 30);
+  --cream: oklch(0.96 0.02 85);
+  --paper: oklch(0.93 0.03 80);
+  --gold: oklch(0.78 0.12 82);
+  --ink: oklch(0.25 0.03 30);
+  --muted: oklch(0.45 0.04 35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:"Cormorant Garamond",serif;font-size:18px;-webkit-font-smoothing:antialiased}
+.hidden{display:none!important}
+.fade-up{animation:fu 1s ease both}@keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
 
-  .stencil{font-family:var(--font-stencil)}
-  .display{font-family:var(--font-display)}
-  .script{font-family:var(--font-script)}
-  .gold{color:var(--gold)}
-  .muted{color:var(--muted-foreground)}
+/* Motif gorga Batak: belah ketupat & spiral merah-hitam-putih */
+.gorga{
+  background-color:var(--black);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke-width='3'%3E%3Cpath d='M40 4 76 40 40 76 4 40Z' stroke='%23a3241f'/%3E%3Cpath d='M40 18 62 40 40 62 18 40Z' stroke='%23f3ead8' stroke-width='2'/%3E%3Cpath d='M40 40m-8 0a8 8 0 1 1 8 8a4 4 0 1 1-4-4' stroke='%23a3241f' stroke-width='2.5'/%3E%3C/g%3E%3C/svg%3E");
+  background-size:80px 80px;color:var(--cream)}
+/* Pita ulos */
+.ulos{height:22px;background:
+  repeating-linear-gradient(90deg,var(--red) 0 14px,var(--black) 14px 18px,var(--cream) 18px 20px,var(--black) 20px 24px),
+  var(--red);
+  border-top:3px solid var(--gold);border-bottom:3px solid var(--gold);position:relative}
+.ulos::after{content:"";position:absolute;inset:6px 0;background:repeating-linear-gradient(45deg,transparent 0 5px,oklch(0.96 0.02 85/.55) 5px 7px)}
 
-  .divider{
-    max-width:20rem;
-    margin:1.5rem auto;
-    display:flex;
-    align-items:center;
-    gap:.75rem;
-  }
-  .star{width:1.25rem;height:1.25rem;fill:var(--gold);flex:none}
+.panel{background:oklch(0.17 0.01 30/.85);border:2px solid var(--gold);outline:1px solid var(--red);outline-offset:-8px;padding:2.75rem 2rem;border-radius:4px;backdrop-filter:blur(3px)}
+.eyebrow{font-family:Cinzel,serif;letter-spacing:.35em;font-size:.75rem;color:var(--gold)}
+.script{font-family:"Great Vibes",cursive;font-weight:400;color:var(--gold);line-height:1.05}
+.horas{font-family:Cinzel,serif;font-weight:700;letter-spacing:.3em;color:var(--gold);font-size:1.6rem}
 
-  /* ---------- cover ---------- */
-  #cover{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:1.5rem;
-    text-align:center;
-  }
-  .cover-card{
-    max-width:28rem;
-    border:1px solid oklch(0.75 0.12 85 / .6);
-    background:oklch(0.3 0.045 135 / .7);
-    backdrop-filter:blur(4px);
-    padding:2.5rem;
-    border-radius:.25rem;
-  }
-  .cover-card .eyebrow{
-    font-family:var(--font-stencil);
-    letter-spacing:.4em;
-    color:var(--gold);
-    font-size:.8rem;
-  }
-  .cover-card h1{
-    font-family:var(--font-script);
-    font-size:3.5rem;
-    color:var(--gold);
-    margin:1rem 0;
-    font-weight:400;
-    line-height:1.1;
-  }
-  .cover-card p{font-size:.875rem}
-  .cover-card .guest{
-    margin-top:.5rem;
-    font-family:var(--font-display);
-    font-size:1.5rem;
-    font-weight:600;
-  }
-  .btn{
-    display:inline-block;
-    border:0;
-    cursor:pointer;
-    text-decoration:none;
-    font-family:var(--font-stencil);
-    letter-spacing:.15em;
-    font-size:.85rem;
-    padding:.75rem 2rem;
-    border-radius:.25rem;
-    transition:opacity .2s ease, background .2s ease;
-  }
-  .btn-gold{background:var(--gold);color:var(--accent);margin-top:2rem}
-  .btn-gold:hover{opacity:.9}
-  .btn-primary{background:var(--primary);color:var(--primary-foreground);margin-top:1.25rem;padding:.5rem 1.25rem}
-  .btn-primary:hover{background:var(--accent)}
+.divider{max-width:18rem;margin:1.5rem auto;display:flex;align-items:center;gap:.6rem}
+.line{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.diamond{width:12px;height:12px;transform:rotate(45deg);background:var(--red);border:2px solid var(--gold);flex:none}
+.diamond.b{background:var(--black)}
 
-  /* ---------- hero ---------- */
-  .hero{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    padding:1.5rem;
-    text-align:center;
-  }
-  .hero .eyebrow{font-family:var(--font-stencil);letter-spacing:.4em;color:var(--gold);font-size:.85rem}
-  .hero h1{
-    font-family:var(--font-script);
-    font-size:4.5rem;
-    color:var(--gold);
-    margin:1.5rem 0;
-    font-weight:400;
-    line-height:1.05;
-  }
-  .hero .date{font-family:var(--font-display);font-size:1.25rem;letter-spacing:.15em}
-  .countdown{margin-top:2rem;width:100%;max-width:28rem;display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
-  .countdown .box{
-    border:1px solid oklch(0.75 0.12 85 / .6);
-    background:oklch(0.3 0.045 135 / .6);
-    padding:.75rem 0;
-    border-radius:.25rem;
-  }
-  .countdown .num{font-family:var(--font-stencil);font-size:1.875rem;color:var(--gold)}
-  .countdown .lbl{font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;color:oklch(0.93 0.03 95 / .8)}
+#cover{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:1.5rem;text-align:center}
+#cover .panel{max-width:27rem;width:100%}
+#cover h1{font-size:3.6rem;margin:.75rem 0}
+.guest{font-family:Cinzel,serif;font-size:1.3rem;margin-top:.4rem;color:var(--cream)}
+.btn{display:inline-block;border:0;cursor:pointer;text-decoration:none;font-family:Cinzel,serif;letter-spacing:.18em;font-size:.8rem;padding:.8rem 2rem;border-radius:2px;transition:.2s}
+.btn-gold{background:var(--gold);color:var(--black);margin-top:1.75rem}
+.btn-gold:hover{background:var(--cream)}
+.btn-red{background:var(--red);color:var(--cream);margin-top:1.25rem;padding:.55rem 1.4rem}
+.btn-red:hover{background:var(--red-deep)}
 
-  /* ---------- sections ---------- */
-  section{padding:5rem 1.5rem}
-  .wrap{max-width:42rem;margin:0 auto;text-align:center}
-  .verse{font-family:var(--font-display);font-size:1.125rem;font-style:italic;color:var(--muted-foreground)}
-  .verse-ref{margin-top:.75rem;font-family:var(--font-stencil);font-size:.8rem;letter-spacing:.15em}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem 1.5rem}
+.hero .panel{max-width:32rem;width:100%}
+.hero h1{font-size:4.4rem;margin:1rem 0}
+.date{font-family:Cinzel,serif;letter-spacing:.2em;font-size:1.1rem}
+.countdown{margin-top:1.75rem;display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem}
+.countdown .box{border:1px solid var(--gold);background:var(--red-deep);padding:.7rem 0;border-radius:2px}
+.num{font-family:Cinzel,serif;font-size:1.7rem;color:var(--gold)}
+.lbl{font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;opacity:.85}
 
-  .couples{display:grid;gap:3rem;margin-top:1rem}
-  .couples .role{font-family:var(--font-stencil);font-size:.7rem;letter-spacing:.3em;color:var(--muted-foreground)}
-  .couples h2{font-family:var(--font-script);font-size:3rem;color:var(--primary);font-weight:400}
-  .couples .parents{margin-top:.5rem;font-size:.875rem;color:var(--muted-foreground)}
-  .amp{font-family:var(--font-script);font-size:3.75rem;color:var(--gold)}
-  @media (min-width:768px){
-    .couples{grid-template-columns:1fr auto 1fr;align-items:center}
-  }
+section{padding:4.5rem 1.5rem}
+.wrap{max-width:42rem;margin:0 auto;text-align:center}
+.light{background:var(--cream)}
+.verse{font-size:1.25rem;font-style:italic;color:var(--muted)}
+.ref{margin-top:.75rem;font-family:Cinzel,serif;font-size:.8rem;letter-spacing:.2em;color:var(--red)}
+.umpasa{margin-top:2rem;font-style:italic;font-size:1.1rem;color:var(--ink)}
+.umpasa small{display:block;margin-top:.5rem;font-style:normal;color:var(--muted);font-size:.9rem}
 
-  .events{background:var(--muted)}
-  .events h2{
-    text-align:center;
-    font-family:var(--font-stencil);
-    font-size:1.875rem;
-    letter-spacing:.3em;
-    color:var(--primary);
-  }
-  .cards{display:grid;gap:2.5rem;margin-top:2.5rem;max-width:48rem;margin-inline:auto}
-  @media (min-width:768px){.cards{grid-template-columns:1fr 1fr}}
-  .card{
-    position:relative;
-    border:2px solid var(--primary);
-    background:var(--card);
-    padding:2rem;
-    text-align:center;
-    border-radius:.25rem;
-    box-shadow:0 10px 15px -3px rgb(0 0 0 / .1);
-  }
-  .card .badge{
-    position:absolute;
-    top:-.75rem;
-    left:50%;
-    transform:translateX(-50%);
-    background:var(--primary);
-    color:var(--primary-foreground);
-    padding:.25rem 1rem;
-    font-family:var(--font-stencil);
-    font-size:.8rem;
-    letter-spacing:.3em;
-    white-space:nowrap;
-  }
-  .card .when{margin-top:.5rem;font-family:var(--font-display);font-size:1.5rem;font-weight:600}
-  .card .time{margin-top:.25rem;color:var(--muted-foreground)}
-  .card .rule{margin:1rem 0}
-  .card .place{font-weight:600}
-  .card .addr{font-size:.875rem;color:var(--muted-foreground)}
+.couples{display:grid;gap:2.25rem;margin-top:1rem}
+.role{font-family:Cinzel,serif;font-size:.72rem;letter-spacing:.3em;color:var(--muted)}
+.couples h2{font-family:"Great Vibes",cursive;font-weight:400;font-size:3.2rem;color:var(--red)}
+.marga{font-family:Cinzel,serif;letter-spacing:.25em;font-size:.95rem;color:var(--black)}
+.parents{margin-top:.4rem;color:var(--muted)}
+.amp{font-family:"Great Vibes",cursive;font-size:3rem;color:var(--gold)}
 
-  .closing{text-align:center}
-  .closing p.lead{max-width:36rem;margin-inline:auto}
-  .closing .kicker{font-family:var(--font-stencil);letter-spacing:.3em;font-size:.9rem}
-  .closing .names{margin-top:.75rem;font-family:var(--font-script);font-size:3rem;color:var(--gold);font-weight:400}
+.events h2,.title{font-family:Cinzel,serif;font-weight:700;letter-spacing:.25em;text-align:center;color:var(--red);font-size:1.4rem}
+.cards{max-width:54rem;margin:0 auto;display:grid;gap:1.5rem}
+@media(min-width:720px){.cards{grid-template-columns:1fr 1fr}.couples{grid-template-columns:1fr auto 1fr;align-items:center}}
+.card{background:var(--cream);border:1px solid var(--gold);border-top:8px solid var(--red);text-align:center;padding:2rem 1.5rem;border-radius:3px;box-shadow:0 12px 30px -16px oklch(0.3 0.12 25/.5)}
+.badge{display:inline-block;background:var(--black);color:var(--gold);font-family:Cinzel,serif;letter-spacing:.2em;font-size:.78rem;padding:.4rem 1rem;border-radius:2px}
+.when{margin-top:1rem;font-size:1.25rem;font-weight:600}
+.time{color:var(--muted)}
+.rule{margin:1rem auto;max-width:10rem}
+.place{font-family:Cinzel,serif;font-size:1.05rem;color:var(--red)}
+.addr{color:var(--muted);font-size:.95rem}
+
+.closing{text-align:center}
+.closing .panel{max-width:34rem;margin:0 auto}
+.lead{font-size:1.15rem;line-height:1.6}
+.kicker{font-family:Cinzel,serif;letter-spacing:.3em;font-size:.75rem;color:var(--gold);margin-top:.5rem}
+.names{font-size:3.2rem;margin-top:.5rem}
 </style>
 </head>
 <body>
 
-<!-- ============ SAMPUL ============ -->
-<main id="cover" class="camo">
-  <div class="cover-card fade-up">
-    <p class="eyebrow">THE WEDDING OF</p>
-    <h1>Juan &amp; Ratiana</h1>
-    <div class="divider">
-      <div class="gold-line"></div>
-      <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg>
-      <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg>
-      <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg>
-      <div class="gold-line"></div>
-    </div>
+<main id="cover" class="gorga">
+  <div class="panel fade-up">
+    <p class="horas">HORAS!</p>
+    <p class="eyebrow" style="margin-top:.75rem">PESTA UNJUK ADAT BATAK</p>
+    <h1 class="script">Juan &amp; Ratiana</h1>
+    <div class="divider"><div class="line"></div><span class="diamond"></span><span class="diamond b"></span><span class="diamond"></span><div class="line"></div></div>
     <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
     <p class="guest" id="guest">Tamu Undangan</p>
     <button class="btn btn-gold" id="openBtn">BUKA UNDANGAN</button>
   </div>
 </main>
 
-<!-- ============ ISI UNDANGAN ============ -->
 <main id="body" class="hidden fade-up">
-
-  <section class="hero camo">
-    <p class="eyebrow">— PERNIKAHAN —</p>
-    <h1>Juan &amp; Ratiana</h1>
-    <p class="date">12 . 12 . 2026</p>
-    <div class="countdown" id="countdown">
-      <div class="box"><div class="num" id="cd-h">00</div><div class="lbl">Hari</div></div>
-      <div class="box"><div class="num" id="cd-m">00</div><div class="lbl">Jam</div></div>
-      <div class="box"><div class="num" id="cd-s">00</div><div class="lbl">Menit</div></div>
-      <div class="box"><div class="num" id="cd-d">00</div><div class="lbl">Detik</div></div>
+  <section class="hero gorga">
+    <div class="panel">
+      <p class="eyebrow">— PARBAGASON —</p>
+      <h1 class="script">Juan &amp; Ratiana</h1>
+      <p class="date">12 . 12 . 2026</p>
+      <div class="countdown">
+        <div class="box"><div class="num" id="cd-h">00</div><div class="lbl">Hari</div></div>
+        <div class="box"><div class="num" id="cd-j">00</div><div class="lbl">Jam</div></div>
+        <div class="box"><div class="num" id="cd-m">00</div><div class="lbl">Menit</div></div>
+        <div class="box"><div class="num" id="cd-d">00</div><div class="lbl">Detik</div></div>
+      </div>
     </div>
   </section>
+  <div class="ulos"></div>
 
-  <section>
+  <section class="light">
     <div class="wrap">
-      <p class="verse">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya."</p>
-      <p class="verse-ref">— QS. AR-RUM : 21 —</p>
-      <div class="divider">
-        <div class="gold-line"></div>
-        <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg>
-        <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg>
-        <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg>
-        <div class="gold-line"></div>
-      </div>
+      <p class="verse">"Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia."</p>
+      <p class="ref">— MATIUS 19 : 6 —</p>
+      <p class="umpasa">"Bagot na marhalto, na tubu di robean.<br>Horas ma hamu na pinarbagas, sai tubu ma anak dohot boru."
+        <small>Semoga kedua mempelai diberkati, rukun, dan dikaruniai keturunan.</small></p>
+      <div class="divider"><div class="line"></div><span class="diamond"></span><span class="diamond b"></span><span class="diamond"></span><div class="line"></div></div>
       <div class="couples">
         <div>
-          <p class="role">MEMPELAI PRIA</p>
+          <p class="role">PARANAK · MEMPELAI PRIA</p>
           <h2>Juan</h2>
-          <p class="parents">Putra dari Bapak Hendra &amp; Ibu Sri</p>
+          <p class="marga">MARGA ……</p>
+          <p class="parents">Anak ni Bapak Hendra &amp; Ibu Sri</p>
         </div>
         <div class="amp">&amp;</div>
         <div>
-          <p class="role">MEMPELAI WANITA</p>
+          <p class="role">PARBORU · MEMPELAI WANITA</p>
           <h2>Ratiana</h2>
-          <p class="parents">Putri dari Bapak Agus &amp; Ibu Wati</p>
+          <p class="marga">BORU ……</p>
+          <p class="parents">Boru ni Bapak Agus &amp; Ibu Wati</p>
         </div>
       </div>
     </div>
   </section>
+  <div class="ulos"></div>
 
   <section class="events">
     <h2>RANGKAIAN ACARA</h2>
-    <div class="divider">
-      <div class="gold-line"></div>
-      <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg>
-      <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg>
-      <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg>
-      <div class="gold-line"></div>
-    </div>
+    <div class="divider"><div class="line"></div><span class="diamond"></span><span class="diamond b"></span><span class="diamond"></span><div class="line"></div></div>
     <div class="cards">
       <div class="card">
-        <div class="badge">AKAD NIKAH</div>
+        <div class="badge">PEMBERKATAN NIKAH</div>
         <p class="when">Sabtu, 12 Desember 2026</p>
-        <p class="time">09.00 – 10.00 WIB</p>
-        <div class="gold-line rule"></div>
-        <p class="place">Masjid Al-Ikhlas</p>
-        <p class="addr">Alamat lokasi akad</p>
-        <a class="btn btn-primary" href="https://maps.google.com" target="_blank" rel="noreferrer">LIHAT PETA</a>
+        <p class="time">09.00 – 10.30 WIB</p>
+        <div class="line rule"></div>
+        <p class="place">Gereja HKBP</p>
+        <p class="addr">Alamat lokasi pemberkatan</p>
+        <a class="btn btn-red" href="https://maps.google.com" target="_blank" rel="noreferrer">LIHAT PETA</a>
       </div>
       <div class="card">
-        <div class="badge">RESEPSI</div>
+        <div class="badge">PESTA ADAT (UNJUK)</div>
         <p class="when">Sabtu, 12 Desember 2026</p>
-        <p class="time">11.00 – 14.00 WIB</p>
-        <div class="gold-line rule"></div>
-        <p class="place">Gedung Balai Prajurit</p>
-        <p class="addr">Alamat lokasi resepsi</p>
-        <a class="btn btn-primary" href="https://maps.google.com" target="_blank" rel="noreferrer">LIHAT PETA</a>
+        <p class="time">11.00 WIB – Selesai</p>
+        <div class="line rule"></div>
+        <p class="place">Gedung Pesta</p>
+        <p class="addr">Alamat lokasi pesta adat</p>
+        <a class="btn btn-red" href="https://maps.google.com" target="_blank" rel="noreferrer">LIHAT PETA</a>
       </div>
     </div>
   </section>
+  <div class="ulos"></div>
 
-  <section class="closing camo">
-    <p class="lead">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
-    <div class="divider">
-      <div class="gold-line"></div>
-      <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg>
-      <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg>
-      <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 9.3l-5.5 4.7L18.2 21 12 17.3 5.8 21l1.7-7L2 9.3l7.1-.4z"/></svg>
-      <div class="gold-line"></div>
+  <section class="closing gorga">
+    <div class="panel">
+      <p class="lead">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu serta pasu-pasu kepada kami.</p>
+      <div class="divider"><div class="line"></div><span class="diamond"></span><span class="diamond b"></span><span class="diamond"></span><div class="line"></div></div>
+      <p class="horas">MAULIATE</p>
+      <p class="kicker">KAMI YANG BERBAHAGIA</p>
+      <p class="names script">Juan &amp; Ratiana</p>
     </div>
-    <p class="kicker">KAMI YANG BERBAHAGIA</p>
-    <p class="names">Juan &amp; Ratiana</p>
   </section>
-
 </main>
 
 <script>
-  var WEDDING = new Date("2026-12-12T09:00:00+07:00").getTime();
-
-  // Nama tamu dari ?to=Nama
-  (function () {
-    var to = new URLSearchParams(window.location.search).get("to");
-    if (to) document.getElementById("guest").textContent = to;
-  })();
-
-  // Hitung mundur
-  function pad(n) { return String(Math.max(0, Math.floor(n))).padStart(2, "0"); }
-  function tick() {
-    var d = Math.max(0, WEDDING - Date.now());
-    document.getElementById("cd-h").textContent = pad(d / 864e5);
-    document.getElementById("cd-m").textContent = pad((d / 36e5) % 24);
-    document.getElementById("cd-s").textContent = pad((d / 6e4) % 60);
-    document.getElementById("cd-d").textContent = pad((d / 1e3) % 60);
-  }
-  tick();
-  setInterval(tick, 1000);
-
-  // Buka undangan
-  document.getElementById("openBtn").addEventListener("click", function () {
-    document.getElementById("cover").classList.add("hidden");
-    document.getElementById("body").classList.remove("hidden");
-    window.scrollTo(0, 0);
-  });
+var WEDDING=new Date("2026-12-12T09:00:00+07:00").getTime();
+(function(){var to=new URLSearchParams(location.search).get("to");if(to)document.getElementById("guest").textContent=to;})();
+function pad(n){return String(Math.max(0,Math.floor(n))).padStart(2,"0")}
+function tick(){var d=Math.max(0,WEDDING-Date.now());
+document.getElementById("cd-h").textContent=pad(d/864e5);
+document.getElementById("cd-j").textContent=pad(d/36e5%24);
+document.getElementById("cd-m").textContent=pad(d/6e4%60);
+document.getElementById("cd-d").textContent=pad(d/1e3%60);}
+tick();setInterval(tick,1000);
+document.getElementById("openBtn").addEventListener("click",function(){
+document.getElementById("cover").classList.add("hidden");document.getElementById("body").classList.remove("hidden");scrollTo(0,0);});
 </script>
 </body>
 </html>
