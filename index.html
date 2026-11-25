@@ -1,205 +1,256 @@
-<!doctype html>
-<html lang="id">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Undangan Pernikahan Adat Batak – Juan &amp; Ratiana</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&display=swap">
+<!DOCTYPE html><html lang="id" data-tsd-source="/src/routes/__root.tsx:118:5"><head data-tsd-source="/src/routes/__root.tsx:119:7"><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Great+Vibes&amp;display=swap" data-precedence="default"/><link rel="stylesheet" href="/assets/styles-B9sz8ch6.css" data-precedence="default"/><title>Undangan Pernikahan Adat Batak – Juan &amp; Ratiana</title><meta name="description" content="Undangan Pesta Unjuk Adat Batak Juan &amp; Ratiana, 12 Desember 2026."/><meta property="og:title" content="Undangan Pernikahan Adat Batak – Juan &amp; Ratiana"/><meta property="og:description" content="Undangan Pesta Unjuk Adat Batak Juan &amp; Ratiana, 12 Desember 2026."/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><link rel="modulepreload" href="/assets/index-BPHZYU6x.js"/><link rel="modulepreload" href="/assets/routes-Xpe6-a8q.js"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="icon" href="/favicon.ico" type="image/x-icon"/>
 <style>
-:root{
-  --red: oklch(0.42 0.16 27);
-  --red-deep: oklch(0.3 0.12 25);
-  --black: oklch(0.17 0.01 30);
-  --cream: oklch(0.96 0.02 85);
-  --paper: oklch(0.93 0.03 80);
-  --gold: oklch(0.78 0.12 82);
-  --ink: oklch(0.25 0.03 30);
-  --muted: oklch(0.45 0.04 35);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--paper);color:var(--ink);font-family:"Cormorant Garamond",serif;font-size:18px;-webkit-font-smoothing:antialiased}
-.hidden{display:none!important}
-.fade-up{animation:fu 1s ease both}@keyframes fu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+	#lovable-badge {
+		--badge-bg: #1b1b1b;
+		--badge-text: #c5c1b9;
+		--badge-text-hover: #dcdad5;
+		--badge-radius: 6px;
+		--badge-padding: 8px;
+		--badge-gap: 6px;
+		--badge-shadow: 
+			0 0 0 1px rgba(0, 0, 0, 0.88),
+			0 1px 0 0 rgba(0, 0, 0, 0.04),
+			0 2px 2px -1px rgba(0, 0, 0, 0.08),
+			0 4px 4px -2px rgba(0, 0, 0, 0.08),
+			0 8px 8px -4px rgba(0, 0, 0, 0.08),
+			0 16px 16px -8px rgba(0, 0, 0, 0.08);
+		--badge-transition-duration: 0.2s;
+		--badge-transition-easing: cubic-bezier(0.16, 1, 0.32, 1);
+		--focus-color: #575ECF;
+		--focus-offset: 2px;
+		--focus-width: 2px;
+		
+		position: fixed;
+		bottom: 12px;
+		right: 12px;
+		height: 24px;
+		display: flex;
+		align-items: center;
+		z-index: 1000000;
+		background-color: var(--badge-bg) !important;
+		color: var(--badge-text) !important;
+		border-radius: var(--badge-radius);
+		box-shadow: var(--badge-shadow) !important;
+		font-size: 12px;
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+		font-weight: 400 !important;
+		text-transform: none !important;
+		font-feature-settings: normal !important;
+		transform: translateZ(0);
+		will-change: transform, opacity;
+		transition: opacity var(--badge-transition-duration) var(--badge-transition-easing);
+	}
 
-/* Motif gorga Batak: belah ketupat & spiral merah-hitam-putih */
-.gorga{
-  background-color:var(--black);
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke-width='3'%3E%3Cpath d='M40 4 76 40 40 76 4 40Z' stroke='%23a3241f'/%3E%3Cpath d='M40 18 62 40 40 62 18 40Z' stroke='%23f3ead8' stroke-width='2'/%3E%3Cpath d='M40 40m-8 0a8 8 0 1 1 8 8a4 4 0 1 1-4-4' stroke='%23a3241f' stroke-width='2.5'/%3E%3C/g%3E%3C/svg%3E");
-  background-size:80px 80px;color:var(--cream)}
-/* Pita ulos */
-.ulos{height:22px;background:
-  repeating-linear-gradient(90deg,var(--red) 0 14px,var(--black) 14px 18px,var(--cream) 18px 20px,var(--black) 20px 24px),
-  var(--red);
-  border-top:3px solid var(--gold);border-bottom:3px solid var(--gold);position:relative}
-.ulos::after{content:"";position:absolute;inset:6px 0;background:repeating-linear-gradient(45deg,transparent 0 5px,oklch(0.96 0.02 85/.55) 5px 7px)}
+	#lovable-badge.closing {
+		opacity: 0;
+		pointer-events: none;
+	}
 
-.panel{background:oklch(0.17 0.01 30/.85);border:2px solid var(--gold);outline:1px solid var(--red);outline-offset:-8px;padding:2.75rem 2rem;border-radius:4px;backdrop-filter:blur(3px)}
-.eyebrow{font-family:Cinzel,serif;letter-spacing:.35em;font-size:.75rem;color:var(--gold)}
-.script{font-family:"Great Vibes",cursive;font-weight:400;color:var(--gold);line-height:1.05}
-.horas{font-family:Cinzel,serif;font-weight:700;letter-spacing:.3em;color:var(--gold);font-size:1.6rem}
+	#lovable-badge-cta {
+		display: flex;
+		align-items: baseline;
+		gap: var(--badge-gap);
+		box-sizing: border-box;
+		padding: 4px var(--badge-padding) 0;
+		height: 100%;
+		color: inherit;
+		text-decoration: none;
+		white-space: nowrap;
+		border-radius: var(--badge-radius) 0 0 var(--badge-radius);
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
 
-.divider{max-width:18rem;margin:1.5rem auto;display:flex;align-items:center;gap:.6rem}
-.line{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.diamond{width:12px;height:12px;transform:rotate(45deg);background:var(--red);border:2px solid var(--gold);flex:none}
-.diamond.b{background:var(--black)}
+	#lovable-badge-cta:hover {
+		background: rgba(255, 255, 255, 0.04);
+		color: var(--badge-text-hover);
+	}
 
-#cover{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:1.5rem;text-align:center}
-#cover .panel{max-width:27rem;width:100%}
-#cover h1{font-size:3.6rem;margin:.75rem 0}
-.guest{font-family:Cinzel,serif;font-size:1.3rem;margin-top:.4rem;color:var(--cream)}
-.btn{display:inline-block;border:0;cursor:pointer;text-decoration:none;font-family:Cinzel,serif;letter-spacing:.18em;font-size:.8rem;padding:.8rem 2rem;border-radius:2px;transition:.2s}
-.btn-gold{background:var(--gold);color:var(--black);margin-top:1.75rem}
-.btn-gold:hover{background:var(--cream)}
-.btn-red{background:var(--red);color:var(--cream);margin-top:1.25rem;padding:.55rem 1.4rem}
-.btn-red:hover{background:var(--red-deep)}
+	#lovable-badge-cta:active {
+		transform: scale(0.98);
+	}
 
-.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem 1.5rem}
-.hero .panel{max-width:32rem;width:100%}
-.hero h1{font-size:4.4rem;margin:1rem 0}
-.date{font-family:Cinzel,serif;letter-spacing:.2em;font-size:1.1rem}
-.countdown{margin-top:1.75rem;display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem}
-.countdown .box{border:1px solid var(--gold);background:var(--red-deep);padding:.7rem 0;border-radius:2px}
-.num{font-family:Cinzel,serif;font-size:1.7rem;color:var(--gold)}
-.lbl{font-size:.7rem;text-transform:uppercase;letter-spacing:.15em;opacity:.85}
+	#lovable-badge-cta:focus {
+		outline: none;
+	}
 
-section{padding:4.5rem 1.5rem}
-.wrap{max-width:42rem;margin:0 auto;text-align:center}
-.light{background:var(--cream)}
-.verse{font-size:1.25rem;font-style:italic;color:var(--muted)}
-.ref{margin-top:.75rem;font-family:Cinzel,serif;font-size:.8rem;letter-spacing:.2em;color:var(--red)}
-.umpasa{margin-top:2rem;font-style:italic;font-size:1.1rem;color:var(--ink)}
-.umpasa small{display:block;margin-top:.5rem;font-style:normal;color:var(--muted);font-size:.9rem}
+	#lovable-badge-cta:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: var(--focus-offset);
+		z-index: 1;
+	}
 
-.couples{display:grid;gap:2.25rem;margin-top:1rem}
-.role{font-family:Cinzel,serif;font-size:.72rem;letter-spacing:.3em;color:var(--muted)}
-.couples h2{font-family:"Great Vibes",cursive;font-weight:400;font-size:3.2rem;color:var(--red)}
-.marga{font-family:Cinzel,serif;letter-spacing:.25em;font-size:.95rem;color:var(--black)}
-.parents{margin-top:.4rem;color:var(--muted)}
-.amp{font-family:"Great Vibes",cursive;font-size:3rem;color:var(--gold)}
+	#lovable-badge-text {
+		line-height: 1;
+	}
 
-.events h2,.title{font-family:Cinzel,serif;font-weight:700;letter-spacing:.25em;text-align:center;color:var(--red);font-size:1.4rem}
-.cards{max-width:54rem;margin:0 auto;display:grid;gap:1.5rem}
-@media(min-width:720px){.cards{grid-template-columns:1fr 1fr}.couples{grid-template-columns:1fr auto 1fr;align-items:center}}
-.card{background:var(--cream);border:1px solid var(--gold);border-top:8px solid var(--red);text-align:center;padding:2rem 1.5rem;border-radius:3px;box-shadow:0 12px 30px -16px oklch(0.3 0.12 25/.5)}
-.badge{display:inline-block;background:var(--black);color:var(--gold);font-family:Cinzel,serif;letter-spacing:.2em;font-size:.78rem;padding:.4rem 1rem;border-radius:2px}
-.when{margin-top:1rem;font-size:1.25rem;font-weight:600}
-.time{color:var(--muted)}
-.rule{margin:1rem auto;max-width:10rem}
-.place{font-family:Cinzel,serif;font-size:1.05rem;color:var(--red)}
-.addr{color:var(--muted);font-size:.95rem}
+	/* The wordmark baseline sits at y=12 of the 16px logo; an empty 12px box
+	   makes that the flex baseline so the text aligns to it on any system font. */
+	#lovable-badge-logo {
+		position: relative;
+		display: block;
+		width: 52px;
+		height: 12px;
+	}
 
-.closing{text-align:center}
-.closing .panel{max-width:34rem;margin:0 auto}
-.lead{font-size:1.15rem;line-height:1.6}
-.kicker{font-family:Cinzel,serif;letter-spacing:.3em;font-size:.75rem;color:var(--gold);margin-top:.5rem}
-.names{font-size:3.2rem;margin-top:.5rem}
+	#lovable-badge-logo svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	#lovable-badge-divider {
+		width: 1px;
+		height: 24px;
+		background-color: rgba(255, 255, 255, 0.04);
+		flex-shrink: 0;
+	}
+
+	#lovable-badge-close {
+		width: 24px;
+		height: 24px;
+		min-width: 24px;
+		min-height: 24px;
+		cursor: pointer;
+		background: none;
+		border: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0 var(--badge-radius) var(--badge-radius) 0;
+		flex-shrink: 0;
+		transition: 
+			background-color var(--badge-transition-duration) ease,
+			transform 0.1s ease;
+	}
+
+	#lovable-badge-close:hover {
+		background: rgba(255, 255, 255, 0.04);
+	}
+
+	#lovable-badge-close:active {
+		transform: scale(0.92);
+	}
+
+	#lovable-badge-close:focus {
+		outline: none;
+	}
+
+	#lovable-badge-close:focus-visible {
+		outline: var(--focus-width) solid var(--focus-color);
+		outline-offset: calc(var(--focus-offset) * -1);
+		z-index: 1;
+	}
+
+	#lovable-badge-close svg path {
+		fill: var(--badge-text);
+		transition: fill var(--badge-transition-duration) ease;
+	}
+
+	#lovable-badge-close:hover svg path {
+		fill: var(--badge-text-hover);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#lovable-badge,
+		#lovable-badge-cta,
+		#lovable-badge-close,
+		#lovable-badge-close svg path {
+			transition: none;
+		}
+		
+		#lovable-badge-cta:active,
+		#lovable-badge-close:active {
+			transform: none;
+		}
+	}
+
+	@media (prefers-contrast: high) {
+		#lovable-badge {
+			--badge-bg: #000;
+			--badge-text: #fff;
+			--badge-text-hover: #fff;
+			border: 2px solid currentColor;
+		}
+		
+		#lovable-badge-cta:focus-visible,
+		#lovable-badge-close:focus-visible {
+			outline-width: 3px;
+		}
+	}
 </style>
-</head>
-<body>
+<script defer src="/__l5e/events.9f6b1a5f4b7ae01b.js" data-artifact-kind="static_preview" data-artifact-id="3abadb3d322a2683f9d29381ec71765d86af98c8" data-commit-sha="3abadb3d322a2683f9d29381ec71765d86af98c8" data-context-token="v1.eyJwcm9qZWN0X2lkIjoibG92cF8zNDJmbnFuemJwOXFnOWthazlmcnBtZHZkNiIsImFydGlmYWN0X2tpbmQiOiJzdGF0aWNfcHJldmlldyIsImFydGlmYWN0X2lkIjoiM2FiYWRiM2QzMjJhMjY4M2Y5ZDI5MzgxZWM3MTc2NWQ4NmFmOThjOCIsImNvbW1pdF9zaGEiOiIzYWJhZGIzZDMyMmEyNjgzZjlkMjkzODFlYzcxNzY1ZDg2YWY5OGM4IiwiZXhwIjoxNzk1NTY5NDI2fQ.jEsNC3kkMlMasAiI2cTBEJekSVPbRG0i_tTMUhxqTlw" data-track-url="/__l5e/trackevents?__lovable_sha=3abadb3d322a2683f9d29381ec71765d86af98c8" data-consent="1"></script><meta name="twitter:title" content="Undangan Pernikahan Adat Batak – Juan &amp;amp; Ratiana"><meta name="twitter:description" content="Undangan Pesta Unjuk Adat Batak Juan &amp;amp; Ratiana, 12 Desember 2026."><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_342fnqnzbp9qg9kak9frpmdvd6/e453eb3076bb2d60a2b619b68caabf05_1795565601236.png"><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_342fnqnzbp9qg9kak9frpmdvd6/e453eb3076bb2d60a2b619b68caabf05_1795565601236.png"></head><body data-tsd-source="/src/routes/__root.tsx:122:7"><!--$--><main class="gorga flex min-h-screen items-center justify-center p-6 text-center" data-tsd-source="/src/routes/index.tsx:81:7"><div class="batak-panel fade-up w-full max-w-[27rem]" data-tsd-source="/src/routes/index.tsx:82:9"><p class="batak-horas" data-tsd-source="/src/routes/index.tsx:83:11">HORAS!</p><p class="batak-eyebrow mt-3" data-tsd-source="/src/routes/index.tsx:84:11">PESTA UNJUK ADAT BATAK</p><h1 class="batak-script my-3 text-6xl" data-tsd-source="/src/routes/index.tsx:85:11">Juan &amp; Ratiana</h1><div class="batak-divider" data-tsd-source="/src/routes/index.tsx:43:5"><div class="batak-line" data-tsd-source="/src/routes/index.tsx:44:7"></div><span class="batak-diamond" data-tsd-source="/src/routes/index.tsx:45:7"></span><span class="batak-diamond batak-diamond-black" data-tsd-source="/src/routes/index.tsx:46:7"></span><span class="batak-diamond" data-tsd-source="/src/routes/index.tsx:47:7"></span><div class="batak-line" data-tsd-source="/src/routes/index.tsx:48:7"></div></div><p data-tsd-source="/src/routes/index.tsx:87:11">Kepada Yth. Bapak/Ibu/Saudara/i</p><p class="mt-1.5 font-[var(--font-display)] text-xl text-[var(--cream)]" data-tsd-source="/src/routes/index.tsx:88:11">Tamu Undangan</p><button type="button" class="batak-btn batak-btn-gold mt-7" data-tsd-source="/src/routes/index.tsx:91:11">BUKA UNDANGAN</button></div></main><script>(function(a,f){let l;try{l=JSON.parse(sessionStorage.getItem(a)||"{}")}catch{return}const n=l?.[f||history.state?.__TSR_key];let c=!1;for(const t in n){const e=n[t],o=e?.scrollX,s=e?.scrollY;if(Number.isFinite(o)&&Number.isFinite(s)){if(t==="window")scrollTo(o,s),c=!0;else if(t)try{const r=document.querySelector(t);r&&(r.scrollLeft=o,r.scrollTop=s)}catch{}}}if(c)return;const i=location.hash.slice(1);if(i){const t=history.state?.__hashScrollIntoViewOptions??!0;if(t){const e=document.getElementById(i);e&&e.scrollIntoView(t)}return}scrollTo(0,0)})("tsr-scroll-restoration-v1_3");document.currentScript.remove()</script><!--/$--><script data-tsr-stream-part="">(self.$R=self.$R||{})["tsr"]=[];self.$_TSR={h(){this.hydrated=!0,this.c()},e(){this.streamEnded=!0,this.c()},c(){this.hydrated&&this.streamEnded&&(delete self.$_TSR,delete self.$R.tsr)},p(e){this.initialized?e():this.buffer.push(e)},buffer:[]};$_TSR.router=($R=>$R[0]={manifest:$R[1]={routes:$R[2]={__root__:$R[3]={preloads:$R[4]=["/assets/index-BPHZYU6x.js"],scripts:$R[5]=[$R[6]={attrs:$R[7]={type:"module",async:!0,src:"/assets/index-BPHZYU6x.js"}}]},"/":$R[8]={preloads:$R[9]=["/assets/routes-Xpe6-a8q.js"]}}},matches:$R[10]=[$R[11]={i:"__root__#",u:1795565826845,s:"success",ssr:!0},$R[12]={i:"##",u:1795565826845,s:"success",ssr:!0}]})($R["tsr"]);$_TSR.e();{let s=document.currentScript,p;while((p=s.previousElementSibling)&&p.hasAttribute('data-tsr-stream-part'))p.remove();s.remove()}</script><script type="module" async="" src="/assets/index-BPHZYU6x.js"></script><script>document.currentScript.remove();/*$tsr-stream-boundary*/</script>
+<aside
+	id="lovable-badge"
+	role="complementary"
+	dir="ltr"
+	lang="en"
+	aria-label="Edit with Lovable">
+	<a
+		id="lovable-badge-cta" 
+		target="_blank" 
+		href="https://lovable.dev/projects/lovp_342fnqnzbp9qg9kak9frpmdvd6?utm_source=lovable-badge"
+		rel="noopener nofollow"
+		aria-label="Edit with Lovable">
+		<span id="lovable-badge-text">Edit with</span>
+		<span id="lovable-badge-logo"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="16" fill="none" viewBox="0 0 52 16">
+  <path fill="#FCFBF8" fill-rule="evenodd" d="M20.318 5.25c.643 0 1.206.14 1.69.418a2.81 2.81 0 0 1 1.118 1.191c.266.513.4 1.115.4 1.807s-.134 1.296-.4 1.812a2.81 2.81 0 0 1-1.118 1.193c-.484.278-1.047.418-1.69.418s-1.208-.14-1.695-.418a2.85 2.85 0 0 1-1.125-1.193c-.262-.516-.393-1.12-.393-1.812s.131-1.294.393-1.807a2.848 2.848 0 0 1 1.125-1.191c.487-.279 1.052-.418 1.695-.418Zm0 1.425c-.27 0-.504.076-.7.228-.193.147-.34.37-.443.67-.102.295-.153.66-.153 1.093 0 .435.05.801.153 1.1.102.3.25.524.443.676.196.147.43.22.7.22.27 0 .502-.073.694-.22.193-.152.341-.375.443-.67.103-.299.153-.667.153-1.106 0-.65-.112-1.145-.337-1.481a1.08 1.08 0 0 0-.953-.51ZM32.7 5.25c.61 0 1.127.1 1.549.3.422.197.74.48.953.849.217.368.325.809.325 1.32v2.704c0 .29.02.562.062.812.044.245.108.4.19.466V12h-1.935a5.895 5.895 0 0 1-.105-.684 7.745 7.745 0 0 1-.02-.228 2.293 2.293 0 0 1-.151.203c-.205.242-.47.437-.793.584-.32.143-.685.215-1.094.215-.406 0-.77-.08-1.094-.24a1.845 1.845 0 0 1-.756-.682 1.984 1.984 0 0 1-.27-1.045c0-.606.178-1.069.535-1.388.356-.324.87-.534 1.542-.633l1.125-.16c.225-.032.403-.074.534-.123a.622.622 0 0 0 .288-.196.549.549 0 0 0 .093-.327.65.65 0 0 0-.11-.367.702.702 0 0 0-.32-.27c-.14-.07-.31-.105-.51-.105-.32 0-.576.083-.768.251-.193.164-.298.39-.314.676h-1.923c.016-.434.147-.82.393-1.155.25-.34.596-.604 1.039-.792.442-.189.954-.283 1.535-.283Zm.99 3.498a.98.98 0 0 1-.215.14 2.49 2.49 0 0 1-.584.178l-.473.092c-.315.061-.553.156-.713.283-.155.127-.233.305-.233.534 0 .23.084.412.252.547.168.135.383.203.645.203s.494-.058.694-.173c.201-.118.355-.282.461-.49.11-.21.166-.448.166-.714v-.6Zm4.526-2.375c.065-.125.138-.243.221-.349.197-.25.437-.44.719-.571.282-.135.6-.203.952-.203.528 0 .988.138 1.377.412.389.275.688.67.896 1.186.21.512.314 1.12.314 1.824 0 .7-.107 1.309-.32 1.825-.213.512-.518.906-.915 1.18-.393.275-.854.412-1.383.412-.352 0-.667-.062-.946-.184a1.832 1.832 0 0 1-.7-.554 2.2 2.2 0 0 1-.234-.383V12h-1.843V3h1.862v3.373Zm1.284.296c-.274 0-.51.085-.707.253-.192.163-.338.397-.436.7a3.376 3.376 0 0 0-.148 1.05c0 .406.05.759.148 1.058.098.299.243.53.436.694.197.164.433.246.707.246.279 0 .512-.082.7-.246.193-.164.336-.395.43-.694.099-.3.148-.652.148-1.058 0-.405-.05-.757-.147-1.056-.095-.299-.238-.53-.43-.694a1.015 1.015 0 0 0-.7-.253Zm9.416-1.419c.602 0 1.136.131 1.604.393.466.262.829.643 1.086 1.143.263.5.394 1.097.394 1.794 0 .25-.002.449-.006.596H47.51c.018.288.071.538.164.75a1.3 1.3 0 0 0 .491.596c.214.13.465.196.757.196.319 0 .583-.082.792-.246.209-.167.34-.403.393-.706h1.862a2.48 2.48 0 0 1-.485 1.235 2.54 2.54 0 0 1-1.051.805c-.439.188-.949.283-1.53.283-.655 0-1.225-.125-1.708-.375a2.672 2.672 0 0 1-1.13-1.143c-.267-.508-.4-1.137-.4-1.887 0-.712.14-1.327.418-1.843a2.86 2.86 0 0 1 1.155-1.186c.491-.27 1.051-.405 1.678-.405Zm-.044 1.345c-.274 0-.516.068-.725.203a1.29 1.29 0 0 0-.479.59 2.045 2.045 0 0 0-.132.498h2.562a1.873 1.873 0 0 0-.138-.602 1.061 1.061 0 0 0-.418-.516 1.243 1.243 0 0 0-.67-.173Z" clip-rule="evenodd"/>
+  <path fill="#FCFBF8" d="m26.605 9.995 1.342-4.566h1.924L27.628 12h-2.07l-2.33-6.57h1.98l1.397 4.565Zm-13.013.143h2.256c1.632 0 1.421 1.837 1.418 1.861h-5.603V3h1.93v7.138Zm31.516 1.861h-1.862V3h1.862v8.999Z"/>
+  <path fill="url(#a)" fill-rule="evenodd" d="M2.7 3c1.492 0 2.7 1.192 2.7 2.663v1.012h.9c1.49 0 2.7 1.192 2.7 2.662S7.791 12 6.3 12H0V5.663C0 4.193 1.209 3 2.7 3Z" clip-rule="evenodd"/>
+  <defs>
+    <radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(-1.54236 7.07838 -10.231 -2.15602 4.627 5.022)" gradientUnits="userSpaceOnUse">
+      <stop offset=".106" stop-color="#FE7B02"/>
+      <stop offset=".394" stop-color="#FE3F21"/>
+      <stop offset=".608" stop-color="#F858BC"/>
+      <stop offset=".929" stop-color="#575ECF"/>
+    </radialGradient>
+  </defs>
+</svg>
 
-<main id="cover" class="gorga">
-  <div class="panel fade-up">
-    <p class="horas">HORAS!</p>
-    <p class="eyebrow" style="margin-top:.75rem">PESTA UNJUK ADAT BATAK</p>
-    <h1 class="script">Juan &amp; Ratiana</h1>
-    <div class="divider"><div class="line"></div><span class="diamond"></span><span class="diamond b"></span><span class="diamond"></span><div class="line"></div></div>
-    <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
-    <p class="guest" id="guest">Tamu Undangan</p>
-    <button class="btn btn-gold" id="openBtn">BUKA UNDANGAN</button>
-  </div>
-</main>
-
-<main id="body" class="hidden fade-up">
-  <section class="hero gorga">
-    <div class="panel">
-      <p class="eyebrow">— PARBAGASON —</p>
-      <h1 class="script">Juan &amp; Ratiana</h1>
-      <p class="date">12 . 12 . 2026</p>
-      <div class="countdown">
-        <div class="box"><div class="num" id="cd-h">00</div><div class="lbl">Hari</div></div>
-        <div class="box"><div class="num" id="cd-j">00</div><div class="lbl">Jam</div></div>
-        <div class="box"><div class="num" id="cd-m">00</div><div class="lbl">Menit</div></div>
-        <div class="box"><div class="num" id="cd-d">00</div><div class="lbl">Detik</div></div>
-      </div>
-    </div>
-  </section>
-  <div class="ulos"></div>
-
-  <section class="light">
-    <div class="wrap">
-      <p class="verse">"Demikianlah mereka bukan lagi dua, melainkan satu. Karena itu, apa yang telah dipersatukan Allah, tidak boleh diceraikan manusia."</p>
-      <p class="ref">— MATIUS 19 : 6 —</p>
-      <p class="umpasa">"Bagot na marhalto, na tubu di robean.<br>Horas ma hamu na pinarbagas, sai tubu ma anak dohot boru."
-        <small>Semoga kedua mempelai diberkati, rukun, dan dikaruniai keturunan.</small></p>
-      <div class="divider"><div class="line"></div><span class="diamond"></span><span class="diamond b"></span><span class="diamond"></span><div class="line"></div></div>
-      <div class="couples">
-        <div>
-          <p class="role">PARANAK · MEMPELAI PRIA</p>
-          <h2>Juan</h2>
-          <p class="marga">MARGA ……</p>
-          <p class="parents">Anak ni Bapak Hendra &amp; Ibu Sri</p>
-        </div>
-        <div class="amp">&amp;</div>
-        <div>
-          <p class="role">PARBORU · MEMPELAI WANITA</p>
-          <h2>Ratiana</h2>
-          <p class="marga">BORU ……</p>
-          <p class="parents">Boru ni Bapak Agus &amp; Ibu Wati</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="ulos"></div>
-
-  <section class="events">
-    <h2>RANGKAIAN ACARA</h2>
-    <div class="divider"><div class="line"></div><span class="diamond"></span><span class="diamond b"></span><span class="diamond"></span><div class="line"></div></div>
-    <div class="cards">
-      <div class="card">
-        <div class="badge">PEMBERKATAN NIKAH</div>
-        <p class="when">Sabtu, 12 Desember 2026</p>
-        <p class="time">09.00 – 10.30 WIB</p>
-        <div class="line rule"></div>
-        <p class="place">Gereja HKBP</p>
-        <p class="addr">Alamat lokasi pemberkatan</p>
-        <a class="btn btn-red" href="https://maps.google.com" target="_blank" rel="noreferrer">LIHAT PETA</a>
-      </div>
-      <div class="card">
-        <div class="badge">PESTA ADAT (UNJUK)</div>
-        <p class="when">Sabtu, 12 Desember 2026</p>
-        <p class="time">11.00 WIB – Selesai</p>
-        <div class="line rule"></div>
-        <p class="place">Gedung Pesta</p>
-        <p class="addr">Alamat lokasi pesta adat</p>
-        <a class="btn btn-red" href="https://maps.google.com" target="_blank" rel="noreferrer">LIHAT PETA</a>
-      </div>
-    </div>
-  </section>
-  <div class="ulos"></div>
-
-  <section class="closing gorga">
-    <div class="panel">
-      <p class="lead">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu serta pasu-pasu kepada kami.</p>
-      <div class="divider"><div class="line"></div><span class="diamond"></span><span class="diamond b"></span><span class="diamond"></span><div class="line"></div></div>
-      <p class="horas">MAULIATE</p>
-      <p class="kicker">KAMI YANG BERBAHAGIA</p>
-      <p class="names script">Juan &amp; Ratiana</p>
-    </div>
-  </section>
-</main>
-
+</span>
+	</a>
+	
+	<span id="lovable-badge-divider" aria-hidden="true"></span>
+	
+	<button 
+		id="lovable-badge-close"
+		aria-label="Dismiss"
+		title="Dismiss"
+		type="button">
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16" aria-hidden="true">
+			<path d="M10.646 4.646a.5.5 0 1 1 .707.708L8.707 8l2.646 2.646a.5.5 0 1 1-.707.707L8 8.707l-2.646 2.646a.5.5 0 1 1-.708-.707L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708L8 7.293l2.646-2.647Z"/>
+		</svg>
+	</button>
+</aside>
 <script>
-var WEDDING=new Date("2026-12-12T09:00:00+07:00").getTime();
-(function(){var to=new URLSearchParams(location.search).get("to");if(to)document.getElementById("guest").textContent=to;})();
-function pad(n){return String(Math.max(0,Math.floor(n))).padStart(2,"0")}
-function tick(){var d=Math.max(0,WEDDING-Date.now());
-document.getElementById("cd-h").textContent=pad(d/864e5);
-document.getElementById("cd-j").textContent=pad(d/36e5%24);
-document.getElementById("cd-m").textContent=pad(d/6e4%60);
-document.getElementById("cd-d").textContent=pad(d/1e3%60);}
-tick();setInterval(tick,1000);
-document.getElementById("openBtn").addEventListener("click",function(){
-document.getElementById("cover").classList.add("hidden");document.getElementById("body").classList.remove("hidden");scrollTo(0,0);});
+	(() => {
+		if (window.self !== window.top || navigator.userAgent.includes('puppeteer')) {
+			const badge = document.querySelector('#lovable-badge');
+			if (badge) {
+				badge.style.display = 'none';
+			}
+			return;
+		}
+
+		const closeButton = document.querySelector('#lovable-badge-close');
+		if (closeButton) {
+			closeButton.addEventListener('click', function(event) {
+				event.preventDefault();
+				event.stopPropagation();
+				const badge = document.querySelector('#lovable-badge');
+				if (badge) {
+					badge.classList.add('closing');
+					setTimeout(function() {
+						if (badge) {
+							badge.style.display = 'none';
+						}
+					}, 240);
+				}
+			});
+		}
+	})();
 </script>
-</body>
-</html>
+<script src="https://cdn.gpteng.co/lovable.js" type="module"></script></body></html>
